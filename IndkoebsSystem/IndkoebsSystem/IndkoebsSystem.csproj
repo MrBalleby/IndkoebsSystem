@@ -46,14 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="CheckoutView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CheckoutView.Designer.cs">
+      <DependentUpon>CheckoutView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateOrderScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateOrderScreen.Designer.cs">
+      <DependentUpon>CreateOrderScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CheckoutView.resx">
+      <DependentUpon>CheckoutView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateOrderScreen.resx">
+      <DependentUpon>CreateOrderScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
